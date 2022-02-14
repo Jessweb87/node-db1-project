@@ -10,7 +10,7 @@ server.use('/api/accounts', accountsRouter)
 
 server.use('*', (req, res) => {
     res.status(404).json({
-        message:'not found',
+        message:'account not found',
     })
 })
 
